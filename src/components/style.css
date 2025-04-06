@@ -1,6 +1,6 @@
 .home-container {
     text-align: center;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .button-container {
@@ -11,11 +11,11 @@
 }
 
 .nav-btn {
-    background-color: #007bff;
+    background-color: #007bff; 
     color: white;
     border: none;
-    padding: 12px 24px;  
-    font-size: 18px;  
+    padding: 12px 24px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
@@ -32,11 +32,126 @@
     background-color: #f4f4f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
 .contact-footer {
     text-align: center;
-    font-size: 14px; 
+    font-size: 14px;
     color: gray;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
+
+.post-auction-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .post-auction-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .post-auction-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .post-auction-form input,
+  .post-auction-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .post-auction-form label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-auction-form .nav-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .post-auction-form .nav-btn:hover {
+    background-color: #0056b3;
+  }
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #f9f9f9;
+  }
+  
+  .auth-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .auth-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-box label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 15px;
+  }
+  
+  .auth-box input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .auth-box button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .auth-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-message {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  

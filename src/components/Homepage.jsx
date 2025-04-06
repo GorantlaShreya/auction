@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Bidding from './Bidding'; // Importing Bidding component
 import "./style.css";
 
 const Homepage = () => {
@@ -14,13 +13,8 @@ const Homepage = () => {
         <button onClick={() => navigate("/home")} className="nav-btn">Home</button>
         <button onClick={() => navigate("/services")} className="nav-btn">Services</button>
         <button onClick={() => navigate("/about")} className="nav-btn">About</button>
+        <button onClick={() => navigate("/post-auction")} className="nav-btn">Post Auction</button>
       </div>
-
-      {/* Bidding Section */}
-      <section className="bidding-section">
-        <h2>Start Bidding Now!</h2>
-        <Bidding /> {/* Add the Bidding component here */}
-      </section>
 
       <div className="contact-footer">
         <p>Contact us at: ey@email.com</p>

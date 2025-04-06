@@ -1,33 +1,32 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/MyNavbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import MyNavbar from "./components/MyNavbar";
 import Homepage from "./components/Homepage";
 import Home from "./components/Home";
-import About from "./components/About";
 import Services from "./components/Services";
-import Contact from "./components/Contact";
-import SignIn from "./components/SignIn1";  
-import SignUp from "./components/SignUp1";  
-import AuctionList from "./components/AuctionList";  
-
+import About from "./components/About";
+import PostAuction from "./components/PostAuction";
+import SignIn from "./components/SignIn1";
+import SignUp from "./components/SignUp1";
+import AuctionList from "./components/AuctionList";
+import SearchResults from "./components/SearchResults";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+    <BrowserRouter>
+      <MyNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/post-auction" element={<PostAuction />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/auctions" element={<AuctionList />} />
+        <Route path="/dashboard" element={<AuctionList />}/>
+        <Route path="/search" element={<SearchResults />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
-
 
 export default App;
